@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+  <ion-card class="card">
+  <ion-card-header>
+  <ion-title class="title">Register</ion-title>
+  </ion-card-header>
+  <ion-card-content>
+  <form [formGroup]="userForm" (ngSubmit)="registerUser()">
+  <ion-item class="form-group">
+  <ion-label class="form-label">First Name</ion-label>
+  <ion-input type="text" autofocus="true" formControlName="firstName"
+  class="form-input" placeholder="Your Firstname"></ion-input>
+  </ion-item>
+  <ion-item class="form-group">
+  <ion-label class="form-label">Last Name</ion-label>
+  <ion-input type="text" formControlName="lastName" class="form-input"
+  placeholder="Your Lastname"></ion-input>
+  </ion-item>
+  <ion-item class="form-group">
+  <ion-label class="form-label">Email</ion-label>
+  <ion-input type="email" inputmode="email" formControlName="email"
+  class="form-input" placeholder="Your Email"></ion-input>
+  </ion-item>
+  <ion-item class="form-group">
+  <ion-label class="form-label">Username</ion-label>
+  <ion-input type="text" formControlName="username" class="form-input"
+  placeholder="Your Username"></ion-input>
+  </ion-item>
+  <ion-item class="form-group">
+  <ion-label class="form-label">Password</ion-label>
+  <ion-input type="password" formControlName="password" class="form-input" placeholder="Your Password"></ion-input>
+  </ion-item>
+  <ion-button type="submit" expand="full" class="submit-button">Next</ion-button>
+  </form>
+  <ion-button routerLink="/home" expand="full" class="go-back-button">Go 
+  Back</ion-button>
+  </ion-card-content>
+  </ion-card>
+  </div>
+</ion-content>

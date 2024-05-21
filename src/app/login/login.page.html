@@ -1,0 +1,26 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+  <ion-card class="card">
+  <ion-card-header>
+  <ion-title class="title">Login</ion-title>
+  </ion-card-header>
+  <ion-card-content>
+  <form [formGroup]="userForm" (ngSubmit)="loginUser()">
+  <ion-item class="form-group">
+  <ion-label class="form-label">Username</ion-label>
+  <ion-input type="text" autofocus="true" formControlName="username"
+  class="form-input" placeholder="Your Username"></ion-input>
+  </ion-item>
+  <ion-item class="form-group">
+  <ion-label class="form-label">Password</ion-label>
+  <ion-input type="password" formControlName="password" class="form-input" placeholder="Your Password"></ion-input>
+  </ion-item>
+  <ion-button type="submit" expand="full" class="submit-button">Next</ion-button>
+  </form>
+  <ion-button routerLink="/home" expand="full" class="go-back-button">Go 
+  Back</ion-button>
+  </ion-card-content>
+  </ion-card>
+  </div>
+  </ion-content>
+  
